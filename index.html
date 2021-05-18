@@ -256,6 +256,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 $(document).ready(function(){
                     $('#click-login').click(function(){
 
+                            $('.error-tips').hide();
+                            $('#info-login').hide();
+                            $('#info-user').show();
                             $('#id-user').text($('#openid').val());
                             $('#name-user').text('Victim');
                     });
